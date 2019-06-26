@@ -9,6 +9,7 @@ $("#number-to-guess").text(targetNumber);
 var counter = 0;
 var winCount = 0;
 var lossCount = 0;
+
  
 var numberOptions1 = [1,2,3,4,5,6,7,8,9,10,11,12];
 var computerOptions1= Math.floor(Math.random()*13);
@@ -96,8 +97,8 @@ var computerOptions1= Math.floor(Math.random()*13);
   
     counter += crystalValue;
 
-   
-    alert("New score: " + counter);
+    $("#total-count").text("New score: " + counter);
+    
 
     if (counter === targetNumber) {
       alert("You win!");
