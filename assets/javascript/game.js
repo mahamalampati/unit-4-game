@@ -7,8 +7,9 @@ var targetNumber = number[computerNumber];
 $("#number-to-guess").text(targetNumber);
 
 var counter = 0;
-
-
+var winCount = 0;
+var lossCount = 0;
+ 
 var numberOptions1 = [1,2,3,4,5,6,7,8,9,10,11,12];
 var computerOptions1= Math.floor(Math.random()*13);
 
@@ -100,10 +101,23 @@ var computerOptions1= Math.floor(Math.random()*13);
 
     if (counter === targetNumber) {
       alert("You win!");
+      
+
+      winCount++;
+
+    
+    $("#win-count").text(winCount);
+
     }
+  
 
     else if (counter >= targetNumber) {
       alert("You lose!!");
-    }
+      
 
+      lossCount++;
+
+    // Change Loss Count HTML
+    $("#loss-count").text(lossCount);
+    }
   });
