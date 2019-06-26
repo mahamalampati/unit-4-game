@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>simple crystal game</title>
+  <title> crystal collector</title>
 
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-<body background = "assets/images/gem.jpg">
 
+<body background="assets/images/gem.jpg">
+
+  <header> CRYSTALS COLLECTOR!</header>
+
+  <P>YOU WILL BE GIVEN A RANDOM NUMBER AT THE START OF THE GAME.</P>
+  <br>
+  <p>THERE ARE FOUR CRYSTALS BELOW.BY CLICKING ON A CRYSTAL YOU WILL ADD A SPECIFIC AMOUNT OF POINTS TO YOUR TOTAL
+    SCORE.</p>
+
+  <br>
+  <p>YOU WIN THE GAME BY MATCHING YOUR TOTAL SCORE TO RANDOM NUMBER, YOU LOSE THE GAME IF YOUR TOTAL SCORE GOES ABOVE
+    THE RANDOM NUMBER.</p>
+  <br>
+
+  <p>THE VALUE OF THE EACH CRYSTAL IS HIDDEN FROM YOU UNTIL YOUR CLICK ON IT.</p>
+  <br>
+  <p>EACH TIME WHEN GAME STARTS, THE GAME WILL CHANGE THE VALUES OF EACH CRYSTAL.</p>
   <h1>Number to Guess: <span id="number-to-guess"></span></h1>
-  <h3>Loses:</h3> <h3 class="text-center" id="loss-count">0</h3>
-  <h3>Wins:</h3><h3 class="text-center" id="win-count">0</h3>
-  <h3>Total:</h3><h3 class="text-center" id="total-count">0</h3>
+  <h3>Loses:</h3>
+  <h3 class="text-center" id="loss-count">0</h3>
+  <h3>Wins:</h3>
+  <h3 class="text-center" id="win-count">0</h3>
+  <h3>Total:</h3>
+  <h3 class="text-center" id="total-count">0</h3>
 
 
-  
+
   <div id="crystals">
   </div>
-  
+
 
   </div>
   <script type="text/javascript" src="assets/javascript/game.js"></script>
-  </body>
+</body>
+
 </html>

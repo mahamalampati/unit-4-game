@@ -1,8 +1,19 @@
 
+ header{
 
+  color:green;
+  font-size: 40px;
+  font-style: bold;
+ }
   
   .crystal-image {
     width: 120px;
     height: 120px;
     
+  }
+
+  p{
+   
+    color:rebeccapurple;
+
   }
