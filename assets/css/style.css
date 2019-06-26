@@ -1,4 +1,11 @@
-.crystal-image {
+
+
+  body{
+
+   background-image: url("assets/images/img/crystalimage.jgp");
+  }
+
+  .crystal-image {
     width: 120px;
     height: 120px;
   }
