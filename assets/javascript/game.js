@@ -9,7 +9,13 @@ $("#number-to-guess").text(targetNumber);
 var counter ;
 var winCount = 0;
 var lossCount = 0;
+var crystalValue;
 
+
+
+
+
+  
 var reset = function(){
 
   counter = 0;
@@ -22,88 +28,78 @@ var reset = function(){
   $("#number-to-guess").text(targetNumber);
 
   $("#total-count").text(counter);
-  
-  
-  
+
+  $("#imagecrystal1").attr('data-crystalvalue', Math.floor(Math.random()*13));
+  $("#imagecrystal2").attr('data-crystalvalue', Math.floor(Math.random()*13));
+  $("#imagecrystal3").attr('data-crystalvalue', Math.floor(Math.random()*13));
+  $("#imagecrystal4").attr('data-crystalvalue', Math.floor(Math.random()*13));
 }
 
- 
-var numberOptions1 = [1,2,3,4,5,6,7,8,9,10,11,12];
-var computerOptions1= Math.floor(Math.random()*13);
-
-
-
-
-
   var imageCrystal1 = $("<img>");
+  var imageCrystal2 = $("<img>");
+  var imageCrystal3 = $("<img>");
+  var imageCrystal4 = $("<img>");
 
- 
+
+   
   imageCrystal1.addClass("crystal-image");
 
   
   imageCrystal1.attr("src", "assets/images/image 1.jpg");
-
+  imageCrystal1.attr("id","imagecrystal1")
  
-  imageCrystal1.attr("data-crystalvalue",numberOptions1[computerOptions1]);
+  
    
-
+  imageCrystal1.attr("data-crystalvalue",Math.floor(Math.random()*13));
   
   $("#crystals").append(imageCrystal1);
 
-  var numberOptions2 = [1,2,3,4,5,6,7,8,9,10,11,12];
-  var computerOptions2= Math.floor(Math.random()*13);
-
-  var imageCrystal2 = $("<img>");
-
-  
   imageCrystal2.addClass("crystal-image");
 
   
   imageCrystal2.attr("src", "assets/images/image 2.jpg");
 
   
-  imageCrystal2.attr("data-crystalvalue",numberOptions2[computerOptions2]);
-   
-
+  imageCrystal2.attr("id","imagecrystal2")
+ 
   
+   
+  imageCrystal2.attr("data-crystalvalue",Math.floor(Math.random()*13));
   $("#crystals").append(imageCrystal2);
 
-  var numberOptions3 = [1,2,3,4,5,6,7,8,9,10,11,12];
-  var computerOptions3= Math.floor(Math.random()*13);
-  var imageCrystal3 = $("<img>");
 
-
+   
   imageCrystal3.addClass("crystal-image");
 
   
   imageCrystal3.attr("src", "assets/images/image 3.jpg");
 
 
-  imageCrystal3.attr("data-crystalvalue",numberOptions3[computerOptions3]);
-   
-
+  imageCrystal3.attr("id","imagecrystal3")
+ 
   
+   
+  imageCrystal3.attr("data-crystalvalue",Math.floor(Math.random()*13));
   $("#crystals").append(imageCrystal3);
 
-  var numberOptions4 = [1,2,3,4,5,6,7,8,9,10,11,12];
-  var computerOptions4= Math.floor(Math.random()*13);
-  var imageCrystal4 = $("<img>");
-
- 
+  
   imageCrystal4.addClass("crystal-image");
 
   
   imageCrystal4.attr("src", "assets/images/image 4.jpg");
 
  
-  imageCrystal4.attr("data-crystalvalue",numberOptions4[computerOptions4]);
-   
-
-  
+  imageCrystal4.attr("id","imagecrystal4")
+ 
+  imageCrystal4.attr("data-crystalvalue",Math.floor(Math.random()*13));
   $("#crystals").append(imageCrystal4);
 
+  
+ 
 
   
+
+
 
   $(".crystal-image").on("click", function() {
 
