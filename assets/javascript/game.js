@@ -29,10 +29,10 @@ var reset = function () {
 
   $("#total-count").text(counter);
 
-  $("#imagecrystal1").attr('data-crystalvalue', Math.floor(Math.random() * 13));
-  $("#imagecrystal2").attr('data-crystalvalue', Math.floor(Math.random() * 13));
-  $("#imagecrystal3").attr('data-crystalvalue', Math.floor(Math.random() * 13));
-  $("#imagecrystal4").attr('data-crystalvalue', Math.floor(Math.random() * 13));
+  $("#imagecrystal1").attr('data-crystalvalue', numberOptions[Math.floor(Math.random() * 13)]);
+  $("#imagecrystal2").attr('data-crystalvalue', numberOptions[Math.floor(Math.random() * 13)]);
+  $("#imagecrystal3").attr('data-crystalvalue', numberOptions[Math.floor(Math.random() * 13)]);
+  $("#imagecrystal4").attr('data-crystalvalue', numberOptions[Math.floor(Math.random() * 13)]);
 }
 
 var imageCrystal1 = $("<img>");
@@ -40,6 +40,11 @@ var imageCrystal2 = $("<img>");
 var imageCrystal3 = $("<img>");
 var imageCrystal4 = $("<img>");
 
+var numberOptions = [1,2,3,4,5,6,7,8,9,10,11,12];
+var computerOptions1 = Math.floor(Math.random() * 13);
+var computerOptions2 = Math.floor(Math.random() * 13);
+var computerOptions3 = Math.floor(Math.random() * 13);
+var computerOptions4 = Math.floor(Math.random() * 13);
 
 
 imageCrystal1.addClass("crystal-image");
@@ -50,7 +55,7 @@ imageCrystal1.attr("id", "imagecrystal1")
 
 
 
-imageCrystal1.attr("data-crystalvalue", Math.floor(Math.random() * 13));
+imageCrystal1.attr("data-crystalvalue", numberOptions[computerOptions1]);
 
 $("#crystals").append(imageCrystal1);
 
@@ -64,7 +69,7 @@ imageCrystal2.attr("id", "imagecrystal2")
 
 
 
-imageCrystal2.attr("data-crystalvalue", Math.floor(Math.random() * 13));
+imageCrystal2.attr("data-crystalvalue",numberOptions[computerOptions2]);
 $("#crystals").append(imageCrystal2);
 
 
@@ -79,7 +84,7 @@ imageCrystal3.attr("id", "imagecrystal3")
 
 
 
-imageCrystal3.attr("data-crystalvalue", Math.floor(Math.random() * 13));
+imageCrystal3.attr("data-crystalvalue",numberOptions[computerOptions3]);
 $("#crystals").append(imageCrystal3);
 
 
@@ -91,7 +96,7 @@ imageCrystal4.attr("src", "assets/images/image 4.jpg");
 
 imageCrystal4.attr("id", "imagecrystal4")
 
-imageCrystal4.attr("data-crystalvalue", Math.floor(Math.random() * 13));
+imageCrystal4.attr("data-crystalvalue", numberOptions[computerOptions4]);
 $("#crystals").append(imageCrystal4);
 
 
